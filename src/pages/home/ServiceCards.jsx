@@ -46,7 +46,7 @@ export default function ServiceCards() {
           handleSearch={handleSearch}
         />
       </div>
-      <div className="flex gap-5 overflow-x-auto max-w-7xl w-full md:mx-auto mx-2 px-4 scroll-bar">
+      <div className="flex gap-5 overflow-x-auto  w-full md:mx-auto mx-2 px-4 scroll-bar">
         {filteredCards?.length > 0 &&
           filteredCards?.map((card, index) => {
             return (

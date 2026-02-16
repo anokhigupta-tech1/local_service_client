@@ -8,6 +8,7 @@ import {
   Hammer,
   Scissors,
 } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const services = [
   { name: "Plumber", icon: Wrench },
@@ -21,6 +22,7 @@ const services = [
 ];
 
 export default function ServicesSection() {
+  const navigate=useNavigate();
   return (
     <section className="max-w-7xl mx-auto px-6 py-10">
       {/* Header */}
@@ -41,6 +43,9 @@ export default function ServicesSection() {
             <div
               key={index}
               className="flex flex-col items-center text-center group cursor-pointer"
+              onClick={() => {
+                navigate(`/your-serviceman/${service.name}`);
+              }}
             >
               {/* Icon Box */}
               <div className="w-24 h-24 flex items-center justify-center rounded-2xl bg-gray-100 group-hover:bg-teal-50 transition">
