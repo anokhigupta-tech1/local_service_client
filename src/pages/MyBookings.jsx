@@ -2,10 +2,11 @@ import { useState, useMemo } from "react";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Bell, ArrowLeft } from "lucide-react";
 import BookingCard from "@/components/BookingCard";
+import { useNavigate } from "react-router-dom";
 
 export default function MyBookings() {
   const [tab, setTab] = useState("all");
-
+const navigate=useNavigate();
   const bookings = [
     {
       id: 1,
@@ -14,7 +15,7 @@ export default function MyBookings() {
       category: "upcoming",
       title: "Plumbing Repair",
       provider: "Alex Johnson",
-      price: "$85",
+      price: "₹85",
       date: "Oct 24 • 10:00 AM",
       statusColor: "yellow",
     },
@@ -25,7 +26,7 @@ export default function MyBookings() {
       category: "ongoing",
       title: "Calculus Tutoring",
       provider: "Sarah Miller ⭐ 4.9",
-      price: "$45/hr",
+      price: "₹45/hr",
       date: "Oct 26 • 04:30 PM",
       statusColor: "teal",
     },
@@ -36,7 +37,7 @@ export default function MyBookings() {
       category: "history",
       title: "Light Installation",
       provider: "Professional: David Chen",
-      price: "$120",
+      price: "₹120",
       date: "Finished on Oct 20, 2023",
       statusColor: "gray",
       completed: true,
@@ -55,7 +56,7 @@ export default function MyBookings() {
       <div className="w-full max-w-6xl">
         {/* Header */}
         <div className="flex items-center justify-between mb-8">
-          <ArrowLeft className="cursor-pointer" />
+          <ArrowLeft className="cursor-pointer" onClick={()=>navigate(-1)}/>
           <h1 className="text-3xl font-semibold">My Bookings</h1>
           <Bell />
         </div>

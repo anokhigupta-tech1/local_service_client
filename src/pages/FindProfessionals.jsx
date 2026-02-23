@@ -207,7 +207,7 @@ export default function FindProfessionals() {
                   </div>
 
                   <div className="text-lg font-semibold text-teal-700">
-                    ${pro.price}/hr
+                    ₹{pro.price}/hr
                   </div>
                 </div>
 

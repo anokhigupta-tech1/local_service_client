@@ -72,7 +72,7 @@ export function Navbar() {
             <NavigationMenuLink asChild>
               <Link
                 className="focus:text-red-500 focus:underline no-underline"
-                to="/profile"
+                to="/customer/profile/1"
               >
                 Profile
               </Link>

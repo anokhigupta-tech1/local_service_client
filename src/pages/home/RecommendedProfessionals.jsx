@@ -82,7 +82,7 @@ export default function RecommendedProfessionals() {
                 </div>
                 <div className="flex items-center justify-start gap-3">
                   <p className=" text-lg font-semibold">
-                    ${pro.price}
+                    ₹{pro.price}
                     <span className="text-muted-foreground font-normal text-base">
                       /hr
                     </span>

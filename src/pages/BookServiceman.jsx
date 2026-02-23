@@ -18,11 +18,12 @@ import {
   Plus,
 } from "lucide-react";
 import PaymentPage from "@/components/PaymentPage";
+import { useNavigate } from "react-router-dom";
 
 export default function BookPlumber() {
   const [isPaymentpage, setIsPaymentpage] = useState(false);
   const today = new Date();
-
+  const navigate = useNavigate();
   const [selectedDate, setSelectedDate] = useState(today.getDate());
   const [selectedTime, setSelectedTime] = useState(null);
 
@@ -74,7 +75,7 @@ export default function BookPlumber() {
       <div className="w-full max-w-6xl">
         {/* Header */}
         <div className="flex items-center justify-between mb-8">
-          <ChevronLeft />
+          <ChevronLeft onClick={() => navigate(-1)} className="cursor-pointer"/>
           <div className="text-center">
             <h1 className="text-2xl font-semibold">Book Plumber</h1>
             <p className="text-gray-500">Alex Thompson ⭐ 4.9</p>
@@ -200,22 +201,22 @@ export default function BookPlumber() {
               <CardContent className="space-y-4 text-sm">
                 <div className="flex justify-between">
                   <span>Service Fee</span>
-                  <span>$85.00</span>
+                  <span>₹85.00</span>
                 </div>
                 <div className="flex justify-between">
                   <span>Call-out Charge</span>
-                  <span>$25.00</span>
+                  <span>₹25.00</span>
                 </div>
                 <div className="flex justify-between text-green-600">
                   <span>Discount</span>
-                  <span>- $10.00</span>
+                  <span>- ₹10.00</span>
                 </div>
 
                 <Separator />
 
                 <div className="flex justify-between font-semibold text-lg">
                   <span>Total</span>
-                  <span className="text-teal-600">$100.00</span>
+                  <span className="text-teal-600">₹100.00</span>
                 </div>
 
                 <Button

@@ -25,7 +25,7 @@ export default function ProfessionalProfile() {
       <div className="max-w-5xl mx-auto px-8 py-10">
         {/* HEADER */}
         <div className="flex justify-between items-center mb-10">
-          <ArrowLeft className="cursor-pointer" />
+          <ArrowLeft className="cursor-pointer"  onClick={()=>navigate(-1)}/>
           <h2 className="tracking-widest text-sm font-semibold text-gray-500">
             PROFESSIONAL PROFILE
           </h2>
@@ -121,7 +121,7 @@ export default function ProfessionalProfile() {
                     30 mins of minor fixes.
                   </p>
                 </div>
-                <p className="font-semibold text-teal-700 text-lg">$75</p>
+                <p className="font-semibold text-teal-700 text-lg">₹75</p>
               </CardContent>
             </Card>
 
@@ -136,7 +136,7 @@ export default function ProfessionalProfile() {
                     safety testing.
                   </p>
                 </div>
-                <p className="font-semibold text-teal-700 text-lg">From $450</p>
+                <p className="font-semibold text-teal-700 text-lg">From ₹450</p>
               </CardContent>
             </Card>
           </div>
@@ -195,7 +195,7 @@ export default function ProfessionalProfile() {
             Starting From
           </p>
           <p className="text-3xl font-bold mt-1">
-            $75
+           ₹75
           </p>
         </div>
 

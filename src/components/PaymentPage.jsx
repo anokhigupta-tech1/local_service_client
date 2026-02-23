@@ -43,7 +43,7 @@ export default function PaymentPage({ amount, country, userId, phone, email }) {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100 px-4 py-10">
+    <div className="m flex items-center justify-center bg-gray-100 px-4 py-10">
       <Card className="w-full max-w-lg rounded-2xl shadow-md">
         <CardHeader>
           <CardTitle className="text-center text-2xl">
@@ -51,7 +51,7 @@ export default function PaymentPage({ amount, country, userId, phone, email }) {
           </CardTitle>
         </CardHeader>
 
-        <CardContent className="space-y-6">
+        <CardContent className="space">
           <div className="space-y-2 text-sm">
             <div className="flex justify-between">
               <span>User ID</span>

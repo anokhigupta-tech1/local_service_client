@@ -61,7 +61,7 @@ export default function ServiceProviderDashboard() {
                 <p>Total Revenue</p>
                 <DollarSign />
               </div>
-              <h2 className="text-3xl font-bold">$45,280</h2>
+              <h2 className="text-3xl font-bold">₹45,280</h2>
               <p className="text-sm flex items-center gap-1">
                 <TrendingUp className="h-4 w-4" />
                 +12.5%
@@ -96,7 +96,7 @@ export default function ServiceProviderDashboard() {
             <div>
               <p className="text-muted-foreground">Revenue Growth</p>
               <h2 className="text-3xl font-bold">
-                $12,450 <span className="text-base text-muted-foreground">this week</span>
+                ₹12,450 <span className="text-base text-muted-foreground">this week</span>
               </h2>
             </div>
 

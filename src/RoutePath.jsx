@@ -12,12 +12,14 @@ import Layout from "./pages/dashboard/Layout";
 import EarningsPage from "./pages/dashboard/serviceProvider/EarningsPage";
 import ProfilePro from "./pages/dashboard/serviceProvider/profile/ProfilePro";
 import AddServices from "./pages/dashboard/serviceProvider/AddServices";
+import ProfilePage from "./pages/dashboard/customer/ProfilePage";
 export default function RoutePath() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/create-account" element={<LandingPage />} />
       <Route path="/login" element={<Login />} />
+      <Route path="/customer/profile/:id" element={<ProfilePage />} />
       <Route path="/services/:serviceName" element={<FindProfessionals />} />
       <Route
         path="/service-provider-dashboard"
@@ -56,6 +58,7 @@ export default function RoutePath() {
       <Route path="/profile/:id" element={<ProfessionalProfile />} />
       <Route path="/book-serviceman" element={<BookServiceman />} />
       <Route path="/my-bookings" element={<MyBookings />} />
+      <Route path="/explore" element={<FindProfessionals />} />
     </Routes>
   );
 }
